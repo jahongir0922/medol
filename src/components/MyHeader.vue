@@ -237,10 +237,8 @@ onMounted(() => {
 @keyframes search_anim {
   from {
     width: 50px;
-    // left: 0;
   }
   to {
-    // left: 100%;
     width: 100%;
   }
 }
