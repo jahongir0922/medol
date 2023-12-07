@@ -47,7 +47,7 @@
           Мы на Facebook
         </a>
         <div class="drop_down_lang">
-          <span lang_span="en" class="lang lang_active">
+          <span lang_span="en" class="lang">
             <img class="flag" src="../assets/icons/flag_en.svg" alt="" />
             <span>English</span></span
           >
@@ -55,7 +55,7 @@
             <img class="flag" src="../assets/icons/flag_uz.svg" alt="" />
             <span>O'zbekcha</span></span
           >
-          <span lang_span="ru" class="lang">
+          <span lang_span="ru" class="lang lang_active">
             <img class="flag" src="../assets/icons/flag_ru.svg" alt="" />
             <span>Русский</span></span
           >
@@ -93,12 +93,12 @@
       </div>
     </div>
     <div class="nav_links">
-      <RouterLink to="/">МАГАЗИН</RouterLink>
-      <RouterLink to="/about">О КОМПАНИИ</RouterLink>
-      <RouterLink to="/dfs">ПРОДУКЦИЯ</RouterLink>
-      <RouterLink to="/dsd">УСЛУГИ</RouterLink>
-      <RouterLink to="/dfxdz">АКЦИИ И НОВОСТИ</RouterLink>
-      <RouterLink to="/gdfdz">ОБРАТНАЯ СВЯЗЬ</RouterLink>
+      <RouterLink data-i18n-en="MARKET" data-i18n-uz="MAGAZIN" data-i18n-ru="МАГАЗИН" to="/">МАГАЗИН</RouterLink>
+      <RouterLink data-i18n-en="ABOUT US" data-i18n-uz="KOMPANIYA HAQIDA" data-i18n-ru="О КОМПАНИИ" to="/about">О КОМПАНИИ</RouterLink>
+      <RouterLink data-i18n-en="PRODUCTS" data-i18n-uz="MAHSULOTLAR" data-i18n-ru="ПРОДУКЦИЯ" to="/dfs">ПРОДУКЦИЯ</RouterLink>
+      <RouterLink data-i18n-en="SERVICES" data-i18n-uz="XIZMATLAR" data-i18n-ru="УСЛУГИ" to="/dsd">УСЛУГИ</RouterLink>
+      <RouterLink data-i18n-en="PROMOTION" data-i18n-uz="AKSIYA VA YANGILIKLAR" data-i18n-ru="АКЦИИ И НОВОСТИ" to="/dfxdz">АКЦИИ И НОВОСТИ</RouterLink>
+      <RouterLink data-i18n-en="FEEDBACK" data-i18n-uz="ALOQA" data-i18n-ru="ОБРАТНАЯ СВЯЗЬ" to="/gdfdz">ОБРАТНАЯ СВЯЗЬ</RouterLink>
     </div>
   </div>
 </template>
