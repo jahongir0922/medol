@@ -27,7 +27,7 @@ const username = ref('')
 const password = ref('')
 
 function handleSubmit() {
-  if (username.value == 'oybek' && password.value == 'oybek') {
+  if (username.value == 'Oybek' && password.value == 'Oybek') {
     location.href = '/home'
   } else {
     Swal.fire({
