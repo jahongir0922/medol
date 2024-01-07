@@ -78,7 +78,7 @@
         <span id="search" @click="" ref="" class="icon menu">
           <img src="../assets/icons/menu.svg" alt="" />
           <div class="nav_links_on_tablet">
-            <RouterLink to="/">МАГАЗИН</RouterLink>
+            <RouterLink to="/home">МАГАЗИН</RouterLink>
             <RouterLink to="/about">О КОМПАНИИ</RouterLink>
             <RouterLink to="/dfs">ПРОДУКЦИЯ</RouterLink>
             <RouterLink to="/dsd">УСЛУГИ</RouterLink>
@@ -88,17 +88,47 @@
               <img src="../assets/icons/facebook.svg" alt="" />
               Мы на Facebook
             </a>
+            <RouterLink to="/">Выход</RouterLink>
           </div>
         </span>
+        <RouterLink class="exit" to="/">Выход</RouterLink>
       </div>
     </div>
     <div class="nav_links">
-      <RouterLink data-i18n-en="MARKET" data-i18n-uz="MAGAZIN" data-i18n-ru="МАГАЗИН" to="/">МАГАЗИН</RouterLink>
-      <RouterLink data-i18n-en="ABOUT US" data-i18n-uz="KOMPANIYA HAQIDA" data-i18n-ru="О КОМПАНИИ" to="/about">О КОМПАНИИ</RouterLink>
-      <RouterLink data-i18n-en="PRODUCTS" data-i18n-uz="MAHSULOTLAR" data-i18n-ru="ПРОДУКЦИЯ" to="/dfs">ПРОДУКЦИЯ</RouterLink>
-      <RouterLink data-i18n-en="SERVICES" data-i18n-uz="XIZMATLAR" data-i18n-ru="УСЛУГИ" to="/dsd">УСЛУГИ</RouterLink>
-      <RouterLink data-i18n-en="PROMOTION" data-i18n-uz="AKSIYA VA YANGILIKLAR" data-i18n-ru="АКЦИИ И НОВОСТИ" to="/dfxdz">АКЦИИ И НОВОСТИ</RouterLink>
-      <RouterLink data-i18n-en="FEEDBACK" data-i18n-uz="ALOQA" data-i18n-ru="ОБРАТНАЯ СВЯЗЬ" to="/gdfdz">ОБРАТНАЯ СВЯЗЬ</RouterLink>
+      <RouterLink data-i18n-en="MARKET" data-i18n-uz="MAGAZIN" data-i18n-ru="МАГАЗИН" to="/home"
+        >МАГАЗИН</RouterLink
+      >
+      <RouterLink
+        data-i18n-en="ABOUT US"
+        data-i18n-uz="KOMPANIYA HAQIDA"
+        data-i18n-ru="О КОМПАНИИ"
+        to="/about"
+        >О КОМПАНИИ</RouterLink
+      >
+      <RouterLink
+        data-i18n-en="PRODUCTS"
+        data-i18n-uz="MAHSULOTLAR"
+        data-i18n-ru="ПРОДУКЦИЯ"
+        to="/home2"
+        >ПРОДУКЦИЯ</RouterLink
+      >
+      <RouterLink data-i18n-en="SERVICES" data-i18n-uz="XIZMATLAR" data-i18n-ru="УСЛУГИ" to="/home3"
+        >УСЛУГИ</RouterLink
+      >
+      <RouterLink
+        data-i18n-en="PROMOTION"
+        data-i18n-uz="AKSIYA VA YANGILIKLAR"
+        data-i18n-ru="АКЦИИ И НОВОСТИ"
+        to="/home4"
+        >АКЦИИ И НОВОСТИ</RouterLink
+      >
+      <RouterLink
+        data-i18n-en="FEEDBACK"
+        data-i18n-uz="ALOQA"
+        data-i18n-ru="ОБРАТНАЯ СВЯЗЬ"
+        to="/home5"
+        >ОБРАТНАЯ СВЯЗЬ</RouterLink
+      >
     </div>
   </div>
 </template>
@@ -326,6 +356,20 @@ onMounted(() => {
     height: 25px;
     border-radius: 50%;
     box-shadow: 0 0 2px black;
+  }
+}
+.exit {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 10px;
+  gap: 5px;
+  background-color: white;
+  border-radius: 25px;
+  @include media('<=600px') {
+    display: none;
   }
 }
 .select_lang {
