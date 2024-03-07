@@ -4,8 +4,8 @@
       <img class="logo_img" src="../assets/icons/logo_alone.png" alt="" />
       <h1 class="company_name">Medol</h1>
       <form @submit.prevent="handleSubmit()" action="">
-        <input class="login-input" type="text" placeholder="Login" v-model="username" />
-        <input class="login-input" type="password" placeholder="Parol" v-model="password" />
+        <input class="login-input" type="text" placeholder="login" v-model="username" />
+        <input class="login-input" type="password" placeholder="parol" v-model="password" />
         <button class="login-btn">Kirish</button>
 
         <!-- <div class="form_links">
@@ -23,11 +23,11 @@ import Swal from 'sweetalert2'
 // localStorage.removeItem('token')
 // localStorage.removeItem('role')
 // localStorage.removeItem('userId')
-const username = ref('')
-const password = ref('')
+const username = ref('login')
+const password = ref('parol')
 
 function handleSubmit() {
-  if (username.value == 'Oybek' && password.value == 'Oybek') {
+  if (username.value == 'login' && password.value == 'parol') {
     location.href = '/home'
   } else {
     Swal.fire({
